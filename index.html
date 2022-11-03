@@ -1,16 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>El Kangry</title>
+    <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    <b>hola git</b>
-    <h5>vamos para arriba</h5>
-    <div>
-        vamos que esto se pone bueno
+    <header class="encabezado">
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <div class="logo">
+                    <h2>Cevicheria El kangry</h2>
+                </div>
+                <nav class="navegacion ocultar">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#nosotros">Sobre Nosotros</a>
+                    <a href="#carta">La Carta</a>
+                    <a href="#palabras">Palabras del Chef</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+                <div class="hamburguesa">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="contenido-header" id="inicio">
+            <div class="contenedor-encabezado">
+                <div class="texto-encabezado">
+                    <h2>Bienvenido</h2>
+                    <a href="#carta" class="btn bordes">Revisa Nuestro Menu Marino</a>
+                </div>
+                <video autoplay loop muted>
+                    <source src="/assets/kangryvideo.mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-nosotros contenedor" id="nosotros">
+        <div class="texto-nosotros">
+            <p class="bienvenida">Bienvenidos a la cevicheria</p>
+            <h1>El Kangry</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, fugiat delectus porro suscipit
+                architecto ab impedit accusantium quod voluptate quaerat odio sunt quisquam odit, sapiente aut esse
+                possimus nulla totam!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate eveniet placeat nesciunt harum
+                similique ab, illo debitis ullam ipsa labore quidem vitae sunt et quasi veritatis? Excepturi ex non
+                cumque.
+            </p>
+            <a href="#" class="btn btn-rojo">Contactar</a>
+        </div>
+        <div class="imagenes-nosotros">
+            <div class="imagen1">
+                <img data-src="assets/img/oso.jpg" alt="mujer comiendo pizza">
+            </div>
+            <div class="imagenes2">
+                <img data-src="assets/img/kangry1.jpg" alt="mujeres comiendo pizza">
+                <img data-src="assets/img/kangry2.jpg" alt="plato con pasta">
+            </div>
+        </div>
     </div>
+
+    <section class="menu contenedor">
+        <h2 class="texto-platillos" id="carta">Nuestros platos marinos</h2>
+        <div class="botones-platillos">
+            <button class="entradas btn btn-verde">Entradas</button>
+            <button class="pasta btn btn-verde">Tiraditos</button>
+            <button class="pizza btn btn-verde">Picoteos</button>
+            <button class="ceviches btn btn-verde">Ceviches</button>
+            <button class="cevichops btn btn-verde">Cevichops</button>
+            <button class="rondas btn btn-verde">Rondas</button>
+            <button class="duos btn btn-verde">Duos marinos</button>
+            <button class="trios btn btn-verde">Trios marinos</button>
+            <button class="chicharrones btn btn-verde">Chicharrones</button>
+            <button class="filetes btn btn-verde">Filetes de pescados</button>
+            <button class="arroz btn btn-verde">Arroz marinos</button>
+            <button class="fetuchini btn btn-verde">Fetuchinis</button>
+            <button class="porciones btn btn-verde">Porciones</button>
+            <button class="comida btn btn-verde">Comida criolla</button>
+            <button class="sopas btn btn-verde">Sopas</button>
+        </div>
+        <div class="platillos">
+            <div class="platillo" data-platillo="entrada">
+                <img data-src="assets/img/ensalada.webp" alt="entrada">
+                <h2>entrada</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$40.0</p>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="entrada">
+                <img data-src="assets/img/ensalada2.webp" alt="entrada">
+                <h2>entrada</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$40.0</p>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="entrada">
+                <img data-src="assets/img/ensalada2.webp" alt="entrada">
+                <h2>entrada</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$40.0</p>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="assets/img/pasta1.webp" alt="pasta">
+                <h2>Quinoa</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$40.0</p>
+                    
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="assets/img/pasta2.webp" alt="pasta">
+                <h2>Quinoa</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$40.0</p>
+                    
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="assets/img/pasta2.webp" alt="pasta">
+                <h2>Quinoa</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$40.0</p>
+                    
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/img/pizza1.webp" alt="pizza">
+                <h2>Quinoa</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$40.0</p>
+                    
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/img/pizza2.webp" alt="pizza">
+                <h2>Quinoa</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$40.0</p>
+                    
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/img/pizza2.webp" alt="pizza">
+                <h2>Quinoa</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$40.0</p>
+                    
+                </div>
+            </div>
+            <div class="platillo" data-platillo="postre">
+                <img data-src="assets/img/postres1.webp" alt="postre">
+                <h2>Quinoa</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$40.0</p>
+                    
+                </div>
+            </div>
+            <div class="platillo" data-platillo="postre">
+                <img data-src="assets/img/postres2.webp" alt="postre">
+                <h2>Quinoa</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$40.0</p>
+                    
+                </div>
+            </div>
+            <div class="platillo" data-platillo="postre">
+                <img data-src="assets/img/postres2.webp" alt="postre">
+                <h2>Quinoa</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$40.0</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separador">
+        <div class="contenido-separador contenedor">
+            <h2>Disfruta de las delicias del mar</h2>
+            <p>Tenemos toda una variedad de platos marinos y criollos listos para usted</p>
+ 
+        </div>
+    </div>
+
+    <section class="chef contenedor" id="palabras">
+        <h2>Chef ejecutivo</h2>
+        <div class="contenido-chef">
+            <div class="texto-chef">
+                <h3>La exelencia está en la diversidad y el modo de progresar
+                    es conocer y comparar las diversidades de productos, culturas y
+                    técnicas
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis dolores eveniet
+                    vitae,
+                    natus tempora recusandae hic laborum error ducimus repellat, laudantium temporibus tenetur totam
+                    sint
+                    consequuntur eligendi! Asperiores, ad.</p>
+                
+            </div>
+            <div class="imagen-chef">
+                <img data-src="/assets/img/chef.webp" alt="fotografia del chef">
+            </div>
+        </div>
+    </section>
+
+    <div class="formulario-contacto contenedor">
+
+        <div class="informacion-contacto" id="contacto">
+            <h3>Contactanos</h3>
+            <p><i class="fas fa-map-marker-alt"></i>JV Jesus Maria, Tacna, Peru</p>
+            <p><i class="fas fa-envelope"></i> cevicheriaelkangry@hotmail.com</p>
+            <p><i class="fas fa-phone-alt"></i>949 759 083</p>
+            <p><i class="fas fa-phone-alt"></i>+31123410921</p>
+            <div class="redes-sociales">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        
+        <form class="formulario" action="https://formsubmit.co/fc273a3201e56e54b944949fea0cd683 " method="POST">
+            <div class="input-formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="nombre" name="nombre">
+            </div>
+            <div class="input-formulario">
+                <label for="apellidos">Apellido</label>
+                <input type="text" placeholder="apellido" name="apellidos">
+            </div>
+            <div class="input-formulario">
+                <label for="correo">Correo</label>
+                <input type="correo" placeholder="ejemplo@ejemplo.com" name="correo">
+            </div>
+            <div class="input-formulario">
+                <label for="telefono">Teléfono</label>
+                <input type="telefono" placeholder="+90 999 999 9999" name="telefono">
+            </div>
+            <div class="input-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="coments" cols="15" rows="5"></textarea>
+            </div>
+            <div class="btn-formulario">
+                <input type="submit" class="btn btn-verde" value="Enviar">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501">
+                <input type="hidden" name="_captcha" value="false">
+            </div>
+            
+        </form>
+    </div>
+    <div>   </div>
+    <div class="pie-pagina ">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>JV Jesus Maria, Tacna, Peru</p>
+            </div>
+            <div class="info">
+                <h3>Días especiales</h3>
+                <p>Viernes y Domingos 9am - 4:45pm</p>
+                <p>949 759 083</p>
+            </div>
+            <div class="info">
+                <h3>Horarios</h3>
+                <p>Lunes - Domingo 9am - 4:45pm</p>
+                <div class="redes-sociales redes-pie">
+                    <i class="fab fa-facebook-square" ></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy; 2022 Restaurante Elkangry, desarrollado por RQS Soluciones</p>
+    </footer>
+    <script src="js/app.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=949759083&text=Hola quisiera un pedido" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+
 </body>
+
 </html>
